@@ -1,1 +1,1 @@
-AI for Boardgame
+AI Player for Boardgame
