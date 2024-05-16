@@ -1,2 +1,2 @@
 AI Player for Boardgame <br />
-ww
+Gruppenprojekt für Uni
