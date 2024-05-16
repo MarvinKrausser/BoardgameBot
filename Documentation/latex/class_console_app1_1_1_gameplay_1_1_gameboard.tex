@@ -1,0 +1,124 @@
+\doxysection{Console\+App1.\+Gameplay.\+Gameboard Class Reference}
+\hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard}{}\label{class_console_app1_1_1_gameplay_1_1_gameboard}\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_a3fa252a29adb9de569f313e71fe6cf2a}{Gameboard}} (\mbox{\hyperlink{struct_console_app1_1_1_data_containers_1_1_board_config}{Board\+Config}} board\+Config)
+\item 
+List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_ac81bdf3be0720d9f35bdc22ed768053b}{Get\+Neighbors}} (\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}} tile)
+\item 
+bool \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_a61e77a5a3c195b63ba0980e07065ffb5}{is\+Walkable}} (int x, int y, \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a81aef4c275888943b3069d99ab8799eb}{direction\+Enum}} direction)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly Hash\+Set$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_eagle_tile}{Eagle\+Tile}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_a3bd9adcd1db7e14876a8830c0a8bc128}{eagle\+Tiles}} = new()
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_eye}{Eye}} \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_a4751549cd279edaf483efa9c03c4a715}{eye}}
+\item 
+List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_start_field}{Start\+Field}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_a94322cca85c53cb74093699e524455ec}{start\+Fields}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_a8ad4d44e7a58a590f82a6de836762a06}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_a63e937faf23f16bd37e3e25b4c6cefcb}{Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_check_point}{Check\+Point}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_ac20217e7eb819925ddf98e477d40e83c}{Check\+Points}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}}\mbox{[},\mbox{]} \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_ab8b705322152bcbe84c999a7723515e4}{tiles}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+static int \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_a18d4e4232f7f7f819b115833d1713e26}{Max\+Spieler}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_console_app1_1_1_data_containers_1_1_board_state}{Board\+State}} \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard_afd4d208de3266d02585a0a04b0cb1aa1}{Board\+State}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_a3fa252a29adb9de569f313e71fe6cf2a}\label{class_console_app1_1_1_gameplay_1_1_gameboard_a3fa252a29adb9de569f313e71fe6cf2a} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!Gameboard@{Gameboard}}
+\index{Gameboard@{Gameboard}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{Gameboard()}{Gameboard()}}
+{\footnotesize\ttfamily Console\+App1.\+Gameplay.\+Gameboard.\+Gameboard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_console_app1_1_1_data_containers_1_1_board_config}{Board\+Config}}}]{board\+Config }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_ac81bdf3be0720d9f35bdc22ed768053b}\label{class_console_app1_1_1_gameplay_1_1_gameboard_ac81bdf3be0720d9f35bdc22ed768053b} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!GetNeighbors@{GetNeighbors}}
+\index{GetNeighbors@{GetNeighbors}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{GetNeighbors()}{GetNeighbors()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}} $>$ Console\+App1.\+Gameplay.\+Gameboard.\+Get\+Neighbors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}}}]{tile }\end{DoxyParamCaption})}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_a61e77a5a3c195b63ba0980e07065ffb5}\label{class_console_app1_1_1_gameplay_1_1_gameboard_a61e77a5a3c195b63ba0980e07065ffb5} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!isWalkable@{isWalkable}}
+\index{isWalkable@{isWalkable}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{isWalkable()}{isWalkable()}}
+{\footnotesize\ttfamily bool Console\+App1.\+Gameplay.\+Gameboard.\+is\+Walkable (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a81aef4c275888943b3069d99ab8799eb}{direction\+Enum}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_a3bd9adcd1db7e14876a8830c0a8bc128}\label{class_console_app1_1_1_gameplay_1_1_gameboard_a3bd9adcd1db7e14876a8830c0a8bc128} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!eagleTiles@{eagleTiles}}
+\index{eagleTiles@{eagleTiles}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{eagleTiles}{eagleTiles}}
+{\footnotesize\ttfamily readonly Hash\+Set$<$\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_eagle_tile}{Eagle\+Tile}}$>$ Console\+App1.\+Gameplay.\+Gameboard.\+eagle\+Tiles = new()}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_a4751549cd279edaf483efa9c03c4a715}\label{class_console_app1_1_1_gameplay_1_1_gameboard_a4751549cd279edaf483efa9c03c4a715} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!eye@{eye}}
+\index{eye@{eye}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{eye}{eye}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_eye}{Eye}} Console\+App1.\+Gameplay.\+Gameboard.\+eye}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_a94322cca85c53cb74093699e524455ec}\label{class_console_app1_1_1_gameplay_1_1_gameboard_a94322cca85c53cb74093699e524455ec} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!startFields@{startFields}}
+\index{startFields@{startFields}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{startFields}{startFields}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_start_field}{Start\+Field}}$>$ Console\+App1.\+Gameplay.\+Gameboard.\+start\+Fields}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_afd4d208de3266d02585a0a04b0cb1aa1}\label{class_console_app1_1_1_gameplay_1_1_gameboard_afd4d208de3266d02585a0a04b0cb1aa1} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!BoardState@{BoardState}}
+\index{BoardState@{BoardState}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{BoardState}{BoardState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_console_app1_1_1_data_containers_1_1_board_state}{Board\+State}} Console\+App1.\+Gameplay.\+Gameboard.\+Board\+State\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_ac20217e7eb819925ddf98e477d40e83c}\label{class_console_app1_1_1_gameplay_1_1_gameboard_ac20217e7eb819925ddf98e477d40e83c} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!CheckPoints@{CheckPoints}}
+\index{CheckPoints@{CheckPoints}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{CheckPoints}{CheckPoints}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_check_point}{Check\+Point}}$>$ Console\+App1.\+Gameplay.\+Gameboard.\+Check\+Points\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_a63e937faf23f16bd37e3e25b4c6cefcb}\label{class_console_app1_1_1_gameplay_1_1_gameboard_a63e937faf23f16bd37e3e25b4c6cefcb} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!Height@{Height}}
+\index{Height@{Height}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily int Console\+App1.\+Gameplay.\+Gameboard.\+Height\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_a18d4e4232f7f7f819b115833d1713e26}\label{class_console_app1_1_1_gameplay_1_1_gameboard_a18d4e4232f7f7f819b115833d1713e26} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!MaxSpieler@{MaxSpieler}}
+\index{MaxSpieler@{MaxSpieler}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{MaxSpieler}{MaxSpieler}}
+{\footnotesize\ttfamily int Console\+App1.\+Gameplay.\+Gameboard.\+Max\+Spieler\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_ab8b705322152bcbe84c999a7723515e4}\label{class_console_app1_1_1_gameplay_1_1_gameboard_ab8b705322152bcbe84c999a7723515e4} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!tiles@{tiles}}
+\index{tiles@{tiles}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{tiles}{tiles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}} \mbox{[},\mbox{]} Console\+App1.\+Gameplay.\+Gameboard.\+tiles\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_gameboard_a8ad4d44e7a58a590f82a6de836762a06}\label{class_console_app1_1_1_gameplay_1_1_gameboard_a8ad4d44e7a58a590f82a6de836762a06} 
+\index{ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}!Width@{Width}}
+\index{Width@{Width}!ConsoleApp1.Gameplay.Gameboard@{ConsoleApp1.Gameplay.Gameboard}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily int Console\+App1.\+Gameplay.\+Gameboard.\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Console\+App1/\+Gameplay/\mbox{\hyperlink{_gameboard_8cs}{Gameboard.\+cs}}\end{DoxyCompactItemize}

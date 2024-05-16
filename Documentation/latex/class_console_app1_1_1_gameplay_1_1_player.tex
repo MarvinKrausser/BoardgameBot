@@ -1,0 +1,124 @@
+\doxysection{Console\+App1.\+Gameplay.\+Player Class Reference}
+\hypertarget{class_console_app1_1_1_gameplay_1_1_player}{}\label{class_console_app1_1_1_gameplay_1_1_player}\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_a5f3cc0545126c21d8385d2ea2f926b73}{Player}} (string name, \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a03d060648be27c1251d82727966177fb}{role\+Enum}} role, int reached\+Checkpoints)
+\item 
+void \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_a82a9aaeb76624ee6920b41b4c7661ef5}{Initialize\+Charakter}} (\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_start_field}{Start\+Field}} start\+Field, int lifes, int lembas, \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a9dc907f18de9ae6e2ee7e174c25dce68}{character\+Enum}} charakter\+Enum, int dead\+Rounds\+Left, List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_check_point}{Check\+Point}} $>$ left\+Check\+Points)
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}} \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_a8a99d326683098e177c351213e1818f4}{Clone\+Player}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_aef1675867d1f17f91bfee76479f9d394}{has\+Received\+Error}} = false
+\item 
+List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_a6fb99ca8050882bd4ca8550fd488b3f0}{played\+Cards}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_a642c8b01fb5a4d7f68128ee2a36e6f63}{is\+Ready}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_a6f97eb289b2c90609b4430d4ace8532d}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_a11d1ba65c8ac48513932a7d83be55f0e}{Reached\+Checkpoints}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a03d060648be27c1251d82727966177fb}{role\+Enum}} \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_a7c852f4a130279bf96083b5fe0179295}{Role}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_ac968ad0bb55d486a4a4cb8bee9e266c3}{Player\+Connected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_a25add8a94da747bd7c91737da19ecf0c}{Is\+Player\+Banned}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_charakter}{Charakter}} \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player_aa4aa189d7e00c463441fab09739e7203}{Charakter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_a5f3cc0545126c21d8385d2ea2f926b73}\label{class_console_app1_1_1_gameplay_1_1_player_a5f3cc0545126c21d8385d2ea2f926b73} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!Player@{Player}}
+\index{Player@{Player}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Console\+App1.\+Gameplay.\+Player.\+Player (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a03d060648be27c1251d82727966177fb}{role\+Enum}}}]{role,  }\item[{int}]{reached\+Checkpoints }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_a8a99d326683098e177c351213e1818f4}\label{class_console_app1_1_1_gameplay_1_1_player_a8a99d326683098e177c351213e1818f4} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!ClonePlayer@{ClonePlayer}}
+\index{ClonePlayer@{ClonePlayer}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{ClonePlayer()}{ClonePlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}} Console\+App1.\+Gameplay.\+Player.\+Clone\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_a82a9aaeb76624ee6920b41b4c7661ef5}\label{class_console_app1_1_1_gameplay_1_1_player_a82a9aaeb76624ee6920b41b4c7661ef5} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!InitializeCharakter@{InitializeCharakter}}
+\index{InitializeCharakter@{InitializeCharakter}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{InitializeCharakter()}{InitializeCharakter()}}
+{\footnotesize\ttfamily void Console\+App1.\+Gameplay.\+Player.\+Initialize\+Charakter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_start_field}{Start\+Field}}}]{start\+Field,  }\item[{int}]{lifes,  }\item[{int}]{lembas,  }\item[{\mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a9dc907f18de9ae6e2ee7e174c25dce68}{character\+Enum}}}]{charakter\+Enum,  }\item[{int}]{dead\+Rounds\+Left,  }\item[{List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_check_point}{Check\+Point}} $>$}]{left\+Check\+Points }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_aef1675867d1f17f91bfee76479f9d394}\label{class_console_app1_1_1_gameplay_1_1_player_aef1675867d1f17f91bfee76479f9d394} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!hasReceivedError@{hasReceivedError}}
+\index{hasReceivedError@{hasReceivedError}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{hasReceivedError}{hasReceivedError}}
+{\footnotesize\ttfamily bool Console\+App1.\+Gameplay.\+Player.\+has\+Received\+Error = false}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_a6fb99ca8050882bd4ca8550fd488b3f0}\label{class_console_app1_1_1_gameplay_1_1_player_a6fb99ca8050882bd4ca8550fd488b3f0} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!playedCards@{playedCards}}
+\index{playedCards@{playedCards}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{playedCards}{playedCards}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}}$>$ Console\+App1.\+Gameplay.\+Player.\+played\+Cards}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_aa4aa189d7e00c463441fab09739e7203}\label{class_console_app1_1_1_gameplay_1_1_player_aa4aa189d7e00c463441fab09739e7203} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!Charakter@{Charakter}}
+\index{Charakter@{Charakter}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{Charakter}{Charakter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_charakter}{Charakter}} Console\+App1.\+Gameplay.\+Player.\+Charakter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_a25add8a94da747bd7c91737da19ecf0c}\label{class_console_app1_1_1_gameplay_1_1_player_a25add8a94da747bd7c91737da19ecf0c} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!IsPlayerBanned@{IsPlayerBanned}}
+\index{IsPlayerBanned@{IsPlayerBanned}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{IsPlayerBanned}{IsPlayerBanned}}
+{\footnotesize\ttfamily bool Console\+App1.\+Gameplay.\+Player.\+Is\+Player\+Banned\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_a642c8b01fb5a4d7f68128ee2a36e6f63}\label{class_console_app1_1_1_gameplay_1_1_player_a642c8b01fb5a4d7f68128ee2a36e6f63} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!isReady@{isReady}}
+\index{isReady@{isReady}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{isReady}{isReady}}
+{\footnotesize\ttfamily bool Console\+App1.\+Gameplay.\+Player.\+is\+Ready\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_a6f97eb289b2c90609b4430d4ace8532d}\label{class_console_app1_1_1_gameplay_1_1_player_a6f97eb289b2c90609b4430d4ace8532d} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!Name@{Name}}
+\index{Name@{Name}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Console\+App1.\+Gameplay.\+Player.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_ac968ad0bb55d486a4a4cb8bee9e266c3}\label{class_console_app1_1_1_gameplay_1_1_player_ac968ad0bb55d486a4a4cb8bee9e266c3} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!PlayerConnected@{PlayerConnected}}
+\index{PlayerConnected@{PlayerConnected}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{PlayerConnected}{PlayerConnected}}
+{\footnotesize\ttfamily bool Console\+App1.\+Gameplay.\+Player.\+Player\+Connected\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_a11d1ba65c8ac48513932a7d83be55f0e}\label{class_console_app1_1_1_gameplay_1_1_player_a11d1ba65c8ac48513932a7d83be55f0e} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!ReachedCheckpoints@{ReachedCheckpoints}}
+\index{ReachedCheckpoints@{ReachedCheckpoints}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{ReachedCheckpoints}{ReachedCheckpoints}}
+{\footnotesize\ttfamily int Console\+App1.\+Gameplay.\+Player.\+Reached\+Checkpoints\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_player_a7c852f4a130279bf96083b5fe0179295}\label{class_console_app1_1_1_gameplay_1_1_player_a7c852f4a130279bf96083b5fe0179295} 
+\index{ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}!Role@{Role}}
+\index{Role@{Role}!ConsoleApp1.Gameplay.Player@{ConsoleApp1.Gameplay.Player}}
+\doxysubsubsection{\texorpdfstring{Role}{Role}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a03d060648be27c1251d82727966177fb}{role\+Enum}} Console\+App1.\+Gameplay.\+Player.\+Role\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Console\+App1/\+Gameplay/\mbox{\hyperlink{_player_8cs}{Player.\+cs}}\end{DoxyCompactItemize}

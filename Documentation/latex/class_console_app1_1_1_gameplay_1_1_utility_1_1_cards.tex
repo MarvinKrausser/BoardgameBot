@@ -1,0 +1,112 @@
+\doxysection{Console\+App1.\+Gameplay.\+Utility.\+Cards Class Reference}
+\hypertarget{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards}{}\label{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards}\index{ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a893a35917d91c06161f782f8f3ec73b6}{Cards}} ()
+\item 
+List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_ae248d73f79d1c48bf24891834de0eb3a}{create\+And\+Get\+New\+Handkarten}} (int lifes)
+\begin{DoxyCompactList}\small\item\em The function returns the randomly chosen hand cards (\"{}\+\_\+handkarten\"{}). if you want the cards, you need this function needs the lifes of the player. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a314f0b4a1a71e311af14aa92d3f7b33d}{players\+Card\+Choice}} (List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ cards)
+\begin{DoxyCompactList}\small\item\em 1) should be called after a CARD\+\_\+\+CHOICE Message with \"{}cards\"{} as the cards that have been logged in 2) the cards that have not been logged in are placed on the \+\_\+ablagestapel 3) checks if the player logged none or not all five cards in. if there are less than 5 cards, this method adds the rest \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_aa1ab7d3ff99034463e1c19746077b458}{round\+Over}} ()
+\begin{DoxyCompactList}\small\item\em This function can be called outside of this class. Should be called, in case\+: After every Round, when Handkarten were played. It puts the cards \"{}\+\_\+handkarten\"{} on the stack \"{}\+\_\+ablagestapel\"{}. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a29c314e3907403882cb5d9b149d65821}{player\+Died}} ()
+\begin{DoxyCompactList}\small\item\em This function can be called outside of this class. It should be called, when a player died. Puts \+\_\+handkarten on \+\_\+ablagestapel and Clears the handkarten. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a31c8ddba2021ce272808f3c0a620ac8d}{get\+Handkarten}} ()
+\item 
+List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_ae6824e201ed11775f8effa756f34f5d9}{get\+Ablagestapel}} ()
+\item 
+List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a284fbf3fd87f97b05f26b45ca6513004}{get\+Nachziehstapel}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a893a35917d91c06161f782f8f3ec73b6}\label{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a893a35917d91c06161f782f8f3ec73b6} 
+\index{ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}!Cards@{Cards}}
+\index{Cards@{Cards}!ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}}
+\doxysubsubsection{\texorpdfstring{Cards()}{Cards()}}
+{\footnotesize\ttfamily Console\+App1.\+Gameplay.\+Utility.\+Cards.\+Cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_ae248d73f79d1c48bf24891834de0eb3a}\label{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_ae248d73f79d1c48bf24891834de0eb3a} 
+\index{ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}!createAndGetNewHandkarten@{createAndGetNewHandkarten}}
+\index{createAndGetNewHandkarten@{createAndGetNewHandkarten}!ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}}
+\doxysubsubsection{\texorpdfstring{createAndGetNewHandkarten()}{createAndGetNewHandkarten()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ Console\+App1.\+Gameplay.\+Utility.\+Cards.\+create\+And\+Get\+New\+Handkarten (\begin{DoxyParamCaption}\item[{int}]{lifes }\end{DoxyParamCaption})}
+
+
+
+The function returns the randomly chosen hand cards (\"{}\+\_\+handkarten\"{}). if you want the cards, you need this function needs the lifes of the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lifes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_ae6824e201ed11775f8effa756f34f5d9}\label{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_ae6824e201ed11775f8effa756f34f5d9} 
+\index{ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}!getAblagestapel@{getAblagestapel}}
+\index{getAblagestapel@{getAblagestapel}!ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}}
+\doxysubsubsection{\texorpdfstring{getAblagestapel()}{getAblagestapel()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ Console\+App1.\+Gameplay.\+Utility.\+Cards.\+get\+Ablagestapel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a31c8ddba2021ce272808f3c0a620ac8d}\label{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a31c8ddba2021ce272808f3c0a620ac8d} 
+\index{ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}!getHandkarten@{getHandkarten}}
+\index{getHandkarten@{getHandkarten}!ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}}
+\doxysubsubsection{\texorpdfstring{getHandkarten()}{getHandkarten()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ Console\+App1.\+Gameplay.\+Utility.\+Cards.\+get\+Handkarten (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a284fbf3fd87f97b05f26b45ca6513004}\label{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a284fbf3fd87f97b05f26b45ca6513004} 
+\index{ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}!getNachziehstapel@{getNachziehstapel}}
+\index{getNachziehstapel@{getNachziehstapel}!ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}}
+\doxysubsubsection{\texorpdfstring{getNachziehstapel()}{getNachziehstapel()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ Console\+App1.\+Gameplay.\+Utility.\+Cards.\+get\+Nachziehstapel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a29c314e3907403882cb5d9b149d65821}\label{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a29c314e3907403882cb5d9b149d65821} 
+\index{ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}!playerDied@{playerDied}}
+\index{playerDied@{playerDied}!ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}}
+\doxysubsubsection{\texorpdfstring{playerDied()}{playerDied()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$ Console\+App1.\+Gameplay.\+Utility.\+Cards.\+player\+Died (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function can be called outside of this class. It should be called, when a player died. Puts \+\_\+handkarten on \+\_\+ablagestapel and Clears the handkarten. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a314f0b4a1a71e311af14aa92d3f7b33d}\label{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_a314f0b4a1a71e311af14aa92d3f7b33d} 
+\index{ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}!playersCardChoice@{playersCardChoice}}
+\index{playersCardChoice@{playersCardChoice}!ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}}
+\doxysubsubsection{\texorpdfstring{playersCardChoice()}{playersCardChoice()}}
+{\footnotesize\ttfamily bool Console\+App1.\+Gameplay.\+Utility.\+Cards.\+players\+Card\+Choice (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} $>$}]{cards }\end{DoxyParamCaption})}
+
+
+
+1) should be called after a CARD\+\_\+\+CHOICE Message with \"{}cards\"{} as the cards that have been logged in 2) the cards that have not been logged in are placed on the \+\_\+ablagestapel 3) checks if the player logged none or not all five cards in. if there are less than 5 cards, this method adds the rest 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cards} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_aa1ab7d3ff99034463e1c19746077b458}\label{class_console_app1_1_1_gameplay_1_1_utility_1_1_cards_aa1ab7d3ff99034463e1c19746077b458} 
+\index{ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}!roundOver@{roundOver}}
+\index{roundOver@{roundOver}!ConsoleApp1.Gameplay.Utility.Cards@{ConsoleApp1.Gameplay.Utility.Cards}}
+\doxysubsubsection{\texorpdfstring{roundOver()}{roundOver()}}
+{\footnotesize\ttfamily void Console\+App1.\+Gameplay.\+Utility.\+Cards.\+round\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function can be called outside of this class. Should be called, in case\+: After every Round, when Handkarten were played. It puts the cards \"{}\+\_\+handkarten\"{} on the stack \"{}\+\_\+ablagestapel\"{}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Console\+App1/\+Gameplay/\+Utility/\mbox{\hyperlink{_cards_8cs}{Cards.\+cs}}\end{DoxyCompactItemize}

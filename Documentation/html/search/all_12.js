@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['sam_0',['SAM',['../namespace_console_app1_1_1_data_containers.html#a9dc907f18de9ae6e2ee7e174c25dce68a9f1b3be4a82b11d104e4ef7f7ccb1c19',1,'ConsoleApp1::DataContainers']]],
+  ['serveringamedelay_1',['serverIngameDelay',['../struct_console_app1_1_1_data_containers_1_1_game_config.html#a7d9be0f8c61cfae82bf9a5b5bf2e406c',1,'ConsoleApp1::DataContainers::GameConfig']]],
+  ['setwall_2',['setWall',['../class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile.html#abb42e750ce68cd89fafa7c2fffdbd31b',1,'ConsoleApp1::Gameplay::Tiles::Tile']]],
+  ['shootername_3',['shooterName',['../struct_console_app1_1_1_data_containers_1_1_shot_event_1_1_data.html#a379512ee8b2f68841db5a0f2243b93cd',1,'ConsoleApp1::DataContainers::ShotEvent::Data']]],
+  ['shot_5fevent_4',['SHOT_EVENT',['../namespace_console_app1_1_1_data_containers.html#ade72cfed22dc34603d2d2dc801ad0c22a8e519e3c78d6d68fe236357eba98c703',1,'ConsoleApp1::DataContainers']]],
+  ['shotevent_5',['ShotEvent',['../struct_console_app1_1_1_data_containers_1_1_shot_event.html',1,'ConsoleApp1.DataContainers.ShotEvent'],['../struct_console_app1_1_1_data_containers_1_1_shot_event.html#a451e6db132ac1d792f518711f2cb9e63',1,'ConsoleApp1.DataContainers.ShotEvent.ShotEvent()']]],
+  ['shotevent_2ecs_6',['ShotEvent.cs',['../_shot_event_8cs.html',1,'']]],
+  ['shotlembas_7',['shotLembas',['../struct_console_app1_1_1_data_containers_1_1_game_config.html#a51a7106b2d039cb6e2b5f5303dfb31e5',1,'ConsoleApp1::DataContainers::GameConfig']]],
+  ['south_8',['SOUTH',['../namespace_console_app1_1_1_data_containers.html#a81aef4c275888943b3069d99ab8799eba96e44fa82e5a5263fb92337be422d3eb',1,'ConsoleApp1::DataContainers']]],
+  ['spawnposition_9',['spawnPosition',['../struct_console_app1_1_1_data_containers_1_1_player_state.html#a278057e78908bb6893a31856ac54d12a',1,'ConsoleApp1::DataContainers::PlayerState']]],
+  ['spectator_10',['SPECTATOR',['../namespace_console_app1_1_1_data_containers.html#a03d060648be27c1251d82727966177fbaad7525991fe98a3b121c1c71df633c19',1,'ConsoleApp1::DataContainers']]],
+  ['spectators_11',['spectators',['../struct_console_app1_1_1_data_containers_1_1_participants_info_1_1_data.html#ae2fffcf95cbfa96b9162829b995c1683',1,'ConsoleApp1::DataContainers::ParticipantsInfo::Data']]],
+  ['start_5ffield_12',['START_FIELD',['../namespace_console_app1_1_1_gameplay_1_1_enums.html#aedb3862b7c9c00cef14ea9948a0fd2aca876a8aeb1b69fe8bd5fb8746072681de',1,'ConsoleApp1::Gameplay::Enums']]],
+  ['startfield_13',['StartField',['../struct_console_app1_1_1_data_containers_1_1_board_config_1_1_start_field.html',1,'ConsoleApp1.DataContainers.BoardConfig.StartField'],['../class_console_app1_1_1_gameplay_1_1_tiles_1_1_start_field.html',1,'ConsoleApp1.Gameplay.Tiles.StartField'],['../struct_console_app1_1_1_data_containers_1_1_board_config_1_1_start_field.html#aa4c22cea63e6145def4f186079c2fe2e',1,'ConsoleApp1.DataContainers.BoardConfig.StartField.StartField()'],['../class_console_app1_1_1_gameplay_1_1_tiles_1_1_start_field.html#ad183857ac3aab49e181afa1aa7836911',1,'ConsoleApp1.Gameplay.Tiles.StartField.StartField()']]],
+  ['startfield_14',['startField',['../class_console_app1_1_1_gameplay_1_1_utility_1_1_charakter.html#a1f1b78d50859d093332b4bb8e4ea805f',1,'ConsoleApp1::Gameplay::Utility::Charakter']]],
+  ['startfield_2ecs_15',['StartField.cs',['../_start_field_8cs.html',1,'']]],
+  ['startfields_16',['startFields',['../struct_console_app1_1_1_data_containers_1_1_board_config.html#a9430260224dd2c2e5b6b98c6f5c424d8',1,'ConsoleApp1.DataContainers.BoardConfig.startFields'],['../class_console_app1_1_1_gameplay_1_1_gameboard.html#a94322cca85c53cb74093699e524455ec',1,'ConsoleApp1.Gameplay.Gameboard.startFields']]],
+  ['startlembas_17',['startLembas',['../struct_console_app1_1_1_data_containers_1_1_game_config.html#a5c03dfd1e8f2671be1a935fb6d7ada3e',1,'ConsoleApp1::DataContainers::GameConfig']]],
+  ['suspended_18',['suspended',['../struct_console_app1_1_1_data_containers_1_1_player_state.html#aa7f025dffe9f53888b50d303b10b360b',1,'ConsoleApp1::DataContainers::PlayerState']]]
+];

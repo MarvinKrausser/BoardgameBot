@@ -1,0 +1,56 @@
+{
+  "name": "THE CENTERLAEND",
+  "height": 10,
+  "width": 10,
+  "startFields": [
+    {
+      "position": [
+        9,
+        0
+      ],
+      "direction": "WEST"
+    },
+    {
+      "position": [
+        3,
+        0
+      ],
+      "direction": "SOUTH"
+    }
+  ],
+  "checkPoints": [
+    [
+      3,
+      6
+    ],
+    [
+      8,
+      6
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      8,
+      1
+    ]
+  ],
+  "eye": {
+    "position": [
+      9,
+      4
+    ],
+    "direction": "SOUTH"
+  },
+  "holes": [
+    [
+      3,
+      5
+    ]
+  ],
+  "riverFields": [],
+  "walls": [],
+  "lembasFields": [],
+  "eagleFields": []
+}

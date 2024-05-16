@@ -1,0 +1,162 @@
+\doxysection{Console\+App1.\+Gameplay.\+Game\+Manager Class Reference}
+\hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager}{}\label{class_console_app1_1_1_gameplay_1_1_game_manager}\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_a7177ce4a7be42c062aa9c32c591ede7b}{Game\+Manager}} (\mbox{\hyperlink{struct_console_app1_1_1_data_containers_1_1_board_config}{Board\+Config}} boardconfig, \mbox{\hyperlink{struct_console_app1_1_1_data_containers_1_1_game_config}{Game\+Config}} gameconfig)
+\item 
+void \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_a6d3dc9e234e4802ff8155d9d91e991ab}{Move\+Character\+Fast}} (\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}} player, \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}} card)
+\item 
+bool \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_a0b6319e1f58c4492c2c739320b1d8d6e}{Walk}} (\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}} player, \mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a81aef4c275888943b3069d99ab8799eb}{direction\+Enum}} direction)
+\item 
+void \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_a6b28b314e0c574a0356cdc893e400f55}{River\+Event\+Fast}} (\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em Alle standard bewegungen der Karten werden über diese Methode ausgefürt. Es wird ein Spieler, sowie dessen Bewegungen die ausgeführt werden sollen übergeben. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_a42a0bb4b3ea98bcc591dd5b0cd661626}{Find\+Path}} ((int, int) player, \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}} target)
+\begin{DoxyCompactList}\small\item\em Findet für jeden Spieler den kürzesten Pfad zum Auge und sortiert zuerst nach Uhrzeigersinn und dann nach der Pfadlänge Methode gib sowohl eine sortierte Liste zurück, setzt aber gleichzeitig die \"{}players\"{} Liste. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_a554753547f4c99f97bbb665424a06685}{Trigger\+Eagle\+Event}} (\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em this method should be called, when a character needs to be revived //\+TODO\+: Diese Methode testen. Außerdem\+: geht das vlt effizienter? \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_a4b23871975e2183b5eafbd9255ae98b2}{Check\+Checkpoints}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard}{Gameboard}} \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_ab783e207083b4094ffd7195742aa1381}{gameboard}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_ae1d23e7b4e7961dd6d91474c0cf473cb}{players}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}} $>$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_ac481e1c92fc542b4d3fcac3c526c4c62}{viewers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_eye}{Eye}} \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_game_manager_a8a36bb41ba90d7a07f05742cb22d510a}{eye}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_a7177ce4a7be42c062aa9c32c591ede7b}\label{class_console_app1_1_1_gameplay_1_1_game_manager_a7177ce4a7be42c062aa9c32c591ede7b} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!GameManager@{GameManager}}
+\index{GameManager@{GameManager}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{GameManager()}{GameManager()}}
+{\footnotesize\ttfamily Console\+App1.\+Gameplay.\+Game\+Manager.\+Game\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_console_app1_1_1_data_containers_1_1_board_config}{Board\+Config}}}]{boardconfig,  }\item[{\mbox{\hyperlink{struct_console_app1_1_1_data_containers_1_1_game_config}{Game\+Config}}}]{gameconfig }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_a4b23871975e2183b5eafbd9255ae98b2}\label{class_console_app1_1_1_gameplay_1_1_game_manager_a4b23871975e2183b5eafbd9255ae98b2} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!CheckCheckpoints@{CheckCheckpoints}}
+\index{CheckCheckpoints@{CheckCheckpoints}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{CheckCheckpoints()}{CheckCheckpoints()}}
+{\footnotesize\ttfamily bool Console\+App1.\+Gameplay.\+Game\+Manager.\+Check\+Checkpoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_a42a0bb4b3ea98bcc591dd5b0cd661626}\label{class_console_app1_1_1_gameplay_1_1_game_manager_a42a0bb4b3ea98bcc591dd5b0cd661626} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!FindPath@{FindPath}}
+\index{FindPath@{FindPath}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{FindPath()}{FindPath()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}} $>$ Console\+App1.\+Gameplay.\+Game\+Manager.\+Find\+Path (\begin{DoxyParamCaption}\item[{(int, int)}]{player,  }\item[{\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_tile}{Tile}}}]{target }\end{DoxyParamCaption})}
+
+
+
+Findet für jeden Spieler den kürzesten Pfad zum Auge und sortiert zuerst nach Uhrzeigersinn und dann nach der Pfadlänge Methode gib sowohl eine sortierte Liste zurück, setzt aber gleichzeitig die \"{}players\"{} Liste. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+A\texorpdfstring{$\ast$}{*} Pathfinding algorithmus findet den kürzesten Weg von Spieler zum Auge und gibt diesen als Liste zurück.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_a6d3dc9e234e4802ff8155d9d91e991ab}\label{class_console_app1_1_1_gameplay_1_1_game_manager_a6d3dc9e234e4802ff8155d9d91e991ab} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!MoveCharacterFast@{MoveCharacterFast}}
+\index{MoveCharacterFast@{MoveCharacterFast}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{MoveCharacterFast()}{MoveCharacterFast()}}
+{\footnotesize\ttfamily void Console\+App1.\+Gameplay.\+Game\+Manager.\+Move\+Character\+Fast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a159ec72bf47321612ad45f8b84024ae3}{card\+Enum}}}]{card }\end{DoxyParamCaption})}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_a6b28b314e0c574a0356cdc893e400f55}\label{class_console_app1_1_1_gameplay_1_1_game_manager_a6b28b314e0c574a0356cdc893e400f55} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!RiverEventFast@{RiverEventFast}}
+\index{RiverEventFast@{RiverEventFast}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{RiverEventFast()}{RiverEventFast()}}
+{\footnotesize\ttfamily void Console\+App1.\+Gameplay.\+Game\+Manager.\+River\+Event\+Fast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+
+
+Alle standard bewegungen der Karten werden über diese Methode ausgefürt. Es wird ein Spieler, sowie dessen Bewegungen die ausgeführt werden sollen übergeben. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+{\em moves} & \\
+\hline
+\end{DoxyParams}
+
+
+Lässt alle Spieler schießen. Überprüft auf Richtung und Hindernisse. Jeder Spieler kann nur einmal schießen und es wird nur ein Ziel getroffen \Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_a554753547f4c99f97bbb665424a06685}\label{class_console_app1_1_1_gameplay_1_1_game_manager_a554753547f4c99f97bbb665424a06685} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!TriggerEagleEvent@{TriggerEagleEvent}}
+\index{TriggerEagleEvent@{TriggerEagleEvent}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{TriggerEagleEvent()}{TriggerEagleEvent()}}
+{\footnotesize\ttfamily bool Console\+App1.\+Gameplay.\+Game\+Manager.\+Trigger\+Eagle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+
+
+this method should be called, when a character needs to be revived //\+TODO\+: Diese Methode testen. Außerdem\+: geht das vlt effizienter? 
+
+this is a helper method for the method respawn\+All\+Dead\+Charakters(). It returns \"{}false\"{} when the respawn Point is not occupied and returns \"{}true\"{} when it is occupied.
+
+
+\begin{DoxyParams}{Parameters}
+{\em charakter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_a0b6319e1f58c4492c2c739320b1d8d6e}\label{class_console_app1_1_1_gameplay_1_1_game_manager_a0b6319e1f58c4492c2c739320b1d8d6e} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!Walk@{Walk}}
+\index{Walk@{Walk}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{Walk()}{Walk()}}
+{\footnotesize\ttfamily bool Console\+App1.\+Gameplay.\+Game\+Manager.\+Walk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{namespace_console_app1_1_1_data_containers_a81aef4c275888943b3069d99ab8799eb}{direction\+Enum}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_ab783e207083b4094ffd7195742aa1381}\label{class_console_app1_1_1_gameplay_1_1_game_manager_ab783e207083b4094ffd7195742aa1381} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!gameboard@{gameboard}}
+\index{gameboard@{gameboard}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{gameboard}{gameboard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_gameboard}{Gameboard}} Console\+App1.\+Gameplay.\+Game\+Manager.\+gameboard}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_a8a36bb41ba90d7a07f05742cb22d510a}\label{class_console_app1_1_1_gameplay_1_1_game_manager_a8a36bb41ba90d7a07f05742cb22d510a} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!eye@{eye}}
+\index{eye@{eye}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{eye}{eye}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_tiles_1_1_eye}{Eye}} Console\+App1.\+Gameplay.\+Game\+Manager.\+eye\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_ae1d23e7b4e7961dd6d91474c0cf473cb}\label{class_console_app1_1_1_gameplay_1_1_game_manager_ae1d23e7b4e7961dd6d91474c0cf473cb} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!players@{players}}
+\index{players@{players}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{players}{players}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}}$>$ Console\+App1.\+Gameplay.\+Game\+Manager.\+players\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_console_app1_1_1_gameplay_1_1_game_manager_ac481e1c92fc542b4d3fcac3c526c4c62}\label{class_console_app1_1_1_gameplay_1_1_game_manager_ac481e1c92fc542b4d3fcac3c526c4c62} 
+\index{ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}!viewers@{viewers}}
+\index{viewers@{viewers}!ConsoleApp1.Gameplay.GameManager@{ConsoleApp1.Gameplay.GameManager}}
+\doxysubsubsection{\texorpdfstring{viewers}{viewers}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_console_app1_1_1_gameplay_1_1_player}{Player}}$>$ Console\+App1.\+Gameplay.\+Game\+Manager.\+viewers\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Console\+App1/\+Gameplay/\mbox{\hyperlink{_game_manager_8cs}{Game\+Manager.\+cs}}\end{DoxyCompactItemize}
